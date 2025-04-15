@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Project Dashboard</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="top-nav">
+        <h1>Project Board</h1>
+        <ul class="menu">
+          <li>Summary</li>
+          <li class="active">Board</li>
+          <li>List</li>
+          <li>Calendar</li>
+          <li>Timeline</li>
+          <div class="auth-buttons">
+            <button onclick="showLogin()">Login</button>
+            <button onclick="showSignup()">Sign Up</button>
+          </div>
+        </ul>
+      </nav>
+    
+      <div class="board-container">
+        <div class="column">
+          <h3>Mentors</h3>
+          <div class="card">Ensure the overview approval</div>
+          <div class="card">Communicate with stakeholders</div>
+          <div class="card">Estimate Budget</div>
+          <div class="auth-options">
+            <button onclick="location.href='mentor-login.html'">Login</button>
+            <button onclick="location.href='mentor-signup.html'">Sign Up</button>
+          </div>
+        </div>
+    
+        <div class="column">
+          <h3>Startup</h3>
+          <div class="card">Finalize UI design</div>
+          <div class="card">Overseas with stakeholders</div>
+          <div class="auth-options">
+            <button onclick="location.href='Startup-login.html'">Login</button>
+            <button onclick="location.href='Startup-signup.html'">Sign Up</button>
+          </div>
+        </div>
+    
+        <div class="column">
+          <h3>Job Seekers</h3>
+          <div class="card">Approval Signatures</div>
+          <div class="card">Project Scope Finalized</div>
+          <div class="auth-options">
+            <button onclick="location.href='Jobseekers-login.html'">Login</button>
+            <button onclick="location.href='Jobseekers-signup.html'">Sign Up</button>
+          </div>
+        </div>
+    
+        <div class="column">
+          <h3>Investors</h3>
+          <div class="card">Communicate with Mentors</div>
+          <div class="card">Estimate Investment</div>
+          <div class="auth-options">
+            <button onclick="location.href='Investors-login.html'">Login</button>
+            <button onclick="location.href='Investors-signup.html'">Sign Up</button>
+          </div>
+        </div>
+  <div class="container">
+   
+    <div id="auth-form-container">
+      <!-- Forms will load here dynamically -->
+    </div>
+  </div>
+
+  <script src="Script.js"></script>
+</body>
+</html>
